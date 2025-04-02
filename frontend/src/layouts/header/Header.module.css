@@ -1,0 +1,12 @@
+.container {
+    position: fixed;
+    top: 0;
+    background-color: #331E0E;
+    min-height: 20vh;
+    left: 0;
+    width: 100vw;
+    color: #F5CCAC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "../pages/main/Main";
 import NotFound from "../pages/not-found/NotFound";
+import Header from "../layouts/header/Header";
 
 const router = createBrowserRouter([
     {
@@ -11,5 +12,10 @@ const router = createBrowserRouter([
 ])
 
 export default function Router() {
-    return <RouterProvider router={router}/>
+    return (
+        <>
+            <Header />
+            <RouterProvider router={router}/>
+        </>
+    )
 }
