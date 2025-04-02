@@ -1,9 +1,7 @@
-import { calculateTotalPrice, Product } from './card'
+import app from "./app";
 
-const cart: Product[] = [
-    { id: 1, name: "Dell", price: 52, quantity: 17 },
-    { id: 2, name: "Lenovo", price: 25, quantity: 2 },
-    { id: 3, name: "Intel", price: 2, quantity: 1 }
-]
+const PORT = process.env.PORT || 5000;
 
-console.log("Total price: " + calculateTotalPrice(cart))
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
+});

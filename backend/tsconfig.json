@@ -3,7 +3,9 @@
     "compilerOptions": {
         "outDir": "./dist",
         "rootDir": "./src",
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "strict": false
     },
     "include": ["src/**/*"],
 }
