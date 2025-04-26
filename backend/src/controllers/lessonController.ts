@@ -13,7 +13,6 @@ export const getLessons = async (
   }
 };
 
-// Отримати уроки за прізвищем
 export const getLessonsBySurname = async (
   req: Request,
   res: Response,
